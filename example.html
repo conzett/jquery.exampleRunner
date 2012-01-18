@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Example Runner</title>		
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	</head>
+	<body>
+		<div id="examples">
+			<div title="Alert Message 1">
+				<p>This is some other stuff.</p>
+				<code>
+					alert("Example 1");
+				</code>
+			</div>
+			<div title="Alert Message 2">
+				<code>
+					alert("Example 2");
+				</code>
+				<p>More things.</p>
+			</div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="jquery.exampleRunner.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#examples').exampleRunner({
+
+			});
+		});
+	</script>
+</html>
